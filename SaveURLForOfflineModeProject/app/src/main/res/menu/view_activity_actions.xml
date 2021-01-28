@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@+id/action_delete"
+        android:title="@string/action_delete"
+		android:icon="@drawable/ic_action_discard"
+		android:showAsAction="ifRoom|withText"/>
+	<item
+        android:id="@+id/action_open_in_external"
+        android:title="@string/action_open_in_external"
+		android:icon="@drawable/ic_action_web_site"
+		android:showAsAction="ifRoom|withText"/>
+	
+	<item
+        android:id="@+id/action_open_file_in_external"
+        android:title="Open in another app"
+		android:icon="@drawable/ic_action_web_site"
+		android:showAsAction="never"/>
+	
+	<item
+        android:id="@+id/action_save_page_properties"
+        android:title="Details of saved page"
+		android:showAsAction="never"/>
+	
+	<item android:id="@+id/ic_action_settings"
+		android:title="Preferences"
+		android:showAsAction="never" />
+</menu>

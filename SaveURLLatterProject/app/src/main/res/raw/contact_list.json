@@ -1,0 +1,75 @@
+{
+  "contacts": [
+    {
+      "name": "Animesh Roy",
+      "phone": "8402815702",
+      "url": "https://stackoverflow.com/questions/23522124/android-display-a-video-thumbnail-from-a-url",
+      "id": 1
+    },
+    {
+      "name": "Aakash Choudhury",
+      "phone": "9854988238",
+      "url": "https://stackoverflow.com/questions/23522124/android-display-a-video-thumbnail-from-a-url",
+      "id": 2
+    },
+    {
+      "name": "Arun Dey",
+      "phone": "9810153260",
+      "url": "https://stackoverflow.com/questions/23522124/android-display-a-video-thumbnail-from-a-url",
+      "id": 3
+    },
+    {
+      "name": "Vikash Choudhury",
+      "phone": "9101909225",
+      "url": "https://stackoverflow.com/questions/23522124/android-display-a-video-thumbnail-from-a-url",
+      "id": 4
+    },
+    {
+      "name": "Gaurav Gupta",
+      "phone": "7002873284",
+      "url": "https://stackoverflow.com/questions/23522124/android-display-a-video-thumbnail-from-a-url",
+      "id": 5
+    },{
+      "name": "Nate Ebal",
+      "phone": "5498764098",
+      "url": "https://stackoverflow.com/questions/23522124/android-display-a-video-thumbnail-from-a-url",
+      "id": 6
+    },
+    {
+      "name": "Avinash Singh",
+      "phone": "9854388238",
+      "url": "https://stackoverflow.com/questions/23522124/android-display-a-video-thumbnail-from-a-url",
+      "id": 7
+    },
+    {
+      "name": "Jesse Anderson",
+      "phone": "3398764532",
+      "url": "https://stackoverflow.com/questions/23522124/android-display-a-video-thumbnail-from-a-url",
+      "id": 8
+    },
+    {
+      "name": "Kaushik Singh",
+      "phone": "9876112238",
+      "url": "https://stackoverflow.com/questions/23522124/android-display-a-video-thumbnail-from-a-url",
+      "id": 9
+    },
+    {
+      "name": "Anderson Felkar",
+      "phone": "9876112238",
+      "url": "https://stackoverflow.com/questions/23522124/android-display-a-video-thumbnail-from-a-url",
+      "id": 10
+    },
+    {
+      "name": "Elliot Shalsow",
+      "phone": "7865429187",
+      "url": "https://stackoverflow.com/questions/23522124/android-display-a-video-thumbnail-from-a-url",
+      "id": 11
+    },
+    {
+      "name": "Ved Jha",
+      "phone": "7765429188",
+      "url": "https://stackoverflow.com/questions/23522124/android-display-a-video-thumbnail-from-a-url",
+      "id": 12
+    }
+  ]
+}

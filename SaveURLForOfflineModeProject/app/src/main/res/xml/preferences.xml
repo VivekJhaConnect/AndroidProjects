@@ -1,0 +1,200 @@
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+		android:title="Saving Options">
+
+        <ListPreference
+			android:key="user_agent"
+			android:title="User agent"
+			android:defaultValue="mobile"
+			android:summary="Choose whether to save the desktop or mobile version of webpage"
+			android:entries="@array/entries_list_preference"
+			android:entryValues="@array/entryvalues_list_preference"
+			android:dialogTitle="Choose" />
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="Storage">
+		<CheckBoxPreference
+            android:key = "is_custom_storage_dir"
+            android:defaultValue="false"
+            android:title="Custom file storage folder"
+            android:text="Enable if you want to store files in a custom location" />
+
+		<EditTextPreference
+			android:key="custom_storage_dir"
+            android:defaultValue="/sdcard/saved-pages/"
+			android:title="Custom storage location" 
+			android:summary="Enter the directory path where you want data to be saved. If it does not exist, it will be created." 
+			android:dialogTitle="Enter directory path (eg. /sdcard/saved-pages/ )"/>
+
+    </PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="Appearance">
+
+		<ListPreference
+			android:key="layout"
+			android:title="Layout for saved pages list"
+			android:defaultValue="1"
+			android:summary="Choose what the list of saved pages should look like, with various choices for list or grid"
+			android:entries="@array/layout_list"
+			android:entryValues="@array/layout_list_values"
+			android:dialogTitle="Choose" />
+
+		<SwitchPreference 
+			android:key="dark_mode" 
+			android:defaultValue="false"
+			android:switchTextOn="On"
+			android:switchTextOff="Off"
+			android:title="Night mode" 
+			android:summary="Use a dark theme, and also use inverted rendering in the viewer (Black becomes white and vice versa). May require app restart to take effect."/>
+
+		<SwitchPreference
+			android:key="default_htmlviewer"
+			android:defaultValue="false"
+			android:switchTextOn="On"
+			android:switchTextOff="Off"
+			android:title="Default html viewer"
+			android:summary="Open page with other application"/>
+
+    </PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="Other">
+		<PreferenceScreen
+			android:title="Advanced Settings"
+			android:summary="Other settings which you may want to change.">
+			<PreferenceCategory
+				android:title="Privacy">
+				<CheckBoxPreference
+					android:key = "offline_sandbox_mode"
+					android:defaultValue="true"
+					android:title="Block network access when viewing pages"
+					android:summary="Prevents saved pages from communicating with web servers and loading scripts, content, ads, or tracking." />
+				<CheckBoxPreference
+					android:key = "enable_javascript"
+					android:defaultValue="true"
+					android:title="Enable JavaScript"/>
+			</PreferenceCategory>
+			<PreferenceCategory
+				android:title="Performance">
+				<CheckBoxPreference
+					android:key = "generate_saved_page_thumbnails"
+					android:defaultValue="true"
+					android:title="Generate page thumbnails"
+					android:summary="Weather to enable the creation of the thumbnails shown in the list. Disabling this results in improved performace if you don't need them."/>
+			</PreferenceCategory>
+		</PreferenceScreen>
+	</PreferenceCategory>
+
+    <PreferenceCategory
+		android:title="About this app">
+
+        <PreferenceScreen
+			android:title="GitHub project page"
+			android:summary="Feature request? Found a bug? Want to contribute? Go here!">
+
+            <intent android:action="android.intent.action.VIEW"
+				android:data="http://github.com/jonasCz/save-for-offline" />
+
+        </PreferenceScreen>
+
+		<PreferenceScreen
+			android:title="Credits"
+			android:summary="All the wonderful libraries and code snippets used in this app">
+
+			<PreferenceScreen
+				android:title="Author: Jonas Czech"
+				android:summary="Check out my GitHub profile for more interesting things">
+
+				<intent android:action="android.intent.action.VIEW"
+					android:data="http://github.com/jonasCz/" />
+
+			</PreferenceScreen>
+
+			<PreferenceCategory
+				android:title="Libraries used">
+
+				<PreferenceScreen
+					android:title="jSoup"
+					android:summary="jSoup, used for parsing and modifying HTML when saving pages.">
+
+					<intent android:action="android.intent.action.VIEW"
+						android:data="http://jsoup.org" />
+
+				</PreferenceScreen>
+
+				<PreferenceScreen
+					android:title="OkHttp"
+					android:summary="OkHttp, an awesome HTTP client library, used for network operations when saving pages">
+
+					<intent android:action="android.intent.action.VIEW"
+						android:data="https://github.com/square/okhttp" />
+
+				</PreferenceScreen>
+
+				<PreferenceScreen
+					android:title="Picasso"
+					android:summary="Square's picasso, for loading thumbnails and icons in the main list">
+
+					<intent android:action="android.intent.action.VIEW"
+						android:data="http://square.github.io/picasso/" />
+
+				</PreferenceScreen>
+
+				<PreferenceScreen
+					android:title="WebArchiveReader"
+					android:summary="by Stack Overflow user gregko, for loading web archive files saved by older versions of the app">
+
+					<intent android:action="android.intent.action.VIEW"
+						android:data="http://github.com/gregko/webarchivereader/" />
+
+				</PreferenceScreen>
+
+				<PreferenceScreen
+					android:title="FuzzyDateFormatter"
+					android:summary="Slightly modified, for displaying the dates in the list, originally by Ionut G. Stan">
+					<intent android:action="android.intent.action.VIEW"
+						android:data="https://github.com/igstan/java-fuzzy-dates" />
+					
+				</PreferenceScreen>
+
+			</PreferenceCategory>
+
+			<PreferenceCategory
+				android:title="Thanks">
+				<PreferenceScreen
+					android:title="F-Droid and its maintainers"
+					android:summary="Touch to visit f-droid.org">
+
+					<intent android:action="android.intent.action.VIEW"
+						android:data="http://f-droid.org" />
+
+				</PreferenceScreen>
+
+				<PreferenceScreen
+					android:title="Action Bar style generator"
+					android:summary="Web-based tool to make nice themes for your app, touch to visit">
+					<intent android:action="android.intent.action.VIEW"
+						android:data="https://jgilfelt.github.io/android-actionbarstylegenerator/" />
+					
+				</PreferenceScreen>
+
+				<PreferenceScreen
+					android:title="Android launcher icon generator"
+					android:summary="Android Asset Studio - Launcher Icon Generator, web based tool for make nice icons for your app, touch to visit">
+					<intent android:action="android.intent.action.VIEW"
+						android:data="https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html" />
+
+				</PreferenceScreen>
+
+			</PreferenceCategory>
+
+		</PreferenceScreen>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
+
